@@ -1,0 +1,14 @@
+git 常用命令行
+    上传与保存
+    git add
+    git commit -m ' '
+    git push origin master
+    初始化仓库
+    git config --global user.name' '
+    git config --global user.email' '
+    克隆仓库
+    git clone 仓库网址
+    查看缓存区当前状态
+    git status
+
+    git remote -v
