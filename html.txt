@@ -1,46 +1,43 @@
 web网站标准
     分为结构，样式，行为三个方面，分别对应html,css,js三种源码。
-html即“超文本标签语言”，主要通过HTML标签对网页中的文本，图片，声音等内容进行描述
+    html即“超文本标签语言”，主要通过HTML标签对网页中的文本，图片，声音等内容进行描述
 标签：例子  <strong> 我是加粗的字体 </strong>
-    <>即为标签。
-Html文本语言语法骨架格式：
-    <html>
-        <head>
-            <title></title>
-        </head>
-        <body>
-        </body>
-    </html>
-html标签：所有html中的一个根节点
-head标签：用于存放title,meta,base,style,script,link
-body标签：用于存放所有html标签
-双标签：形如<a>开始标签</a>结束标签，中间为内容。"/"为关闭符号
-单标签：形如<a/>（非常少）
-标签关系分为 嵌套关系 和 并列关系
-<!DOCTYPE html>用于文件头，表示这是由，html5编写的代码
-<meta charset="UTF-8">表示使用的字符集包含所有国家要用到的字符，一般置于head标签内部
-标签属性：
-    形如<标签名 属性1=“属性1” 属性2=“属性2”> 内容</标签名>
-    属性不分先后顺序，用空格分开。任何标签属性都有默认值
-     图片标签：
-        image缩写为img,单标签
-        基本图片插入方式为<img src=" .jpg"/>
-        alt标签：图片无法显示时的替换文本<img src=" .jpg" alt="  "/>
-        title标签：鼠标悬停时的显示文字
-        图片可以添加长和宽
-        boder标签：为图像添加边框<boder="10">
-     分行标签：
-        br 例如<br />
-    链接标签：
-        anchor的缩写,双标签，使用样例：<a href="跳转目标“>文本或图像</a>
-        herf标签：用于指定目标的url地址，也可以添加内部标签，用法相同，可以使用#号，表示一个空连接
-        taget标签：用于目标的打开方式taget="_blank"表示在新的页面中打开，默认为替换自己_self
-    描点定位：去herf="#xx" 接id="xx",且二者均作为标签的属性来实现。
-    base标签：
-        用于head标签内部，可以让所有本页内链接均成为taget="_blank"
-        例<base taget="_blank"/>
-    段落标签：
-        page缩写为p，<p>段落</p>
+        <>即为标签。
+    Html文本语言语法骨架格式：
+        <html>
+             <head>
+              <title></title>
+              </head>
+             <body>
+            </body>
+        </html>
+    html标签：所有html中的一个根节点
+    head标签：用于存放title,meta,base,style,script,link
+    body标签：用于存放所有html标签
+    双标签：形如<a>开始标签</a>结束标签，中间为内容。"/"为关闭符号
+    单标签：形如<a/>（非常少）
+        <!DOCTYPE html>用于文件头，表示这是由，html5编写的代码
+        <meta charset="UTF-8">表示使用的字符集包含所有国家要用到的字符，一般置于head标签内部
+        图片标签：
+            image缩写为img,单标签
+            基本图片插入方式为<img src=" .jpg"/>
+            alt标签：图片无法显示时的替换文本<img src=" .jpg" alt="  "/>
+            title标签：鼠标悬停时的显示文字
+             图片可以添加长和宽
+            boder标签：为图像添加边框<boder="10">
+            分行标签：br 例如<br />
+            链接标签：
+            anchor的缩写,双标签，使用样例：<a href="跳转目标“>文本或图像</a>
+            herf标签：用于指定目标的url地址，也可以添加内部标签，用法相同，可以使用#号，表示一个空连接
+            taget标签：用于目标的打开方式taget="_blank"表示在新的页面中打开，默认为替换自己_self
+        描点定位：去herf="#xx" 接id="xx",且二者均作为标签的属性来实现。
+        base标签：
+            用于head标签内部，可以让所有本页内链接均成为taget="_blank"
+            例<base taget="_blank"/>
+    标签关系分为 嵌套关系 和 并列关系
+    标签属性：
+        形如<标签名 属性1=“属性1” 属性2=“属性2”> 内容</标签名>
+        属性不分先后顺序，用空格分开。任何标签属性都有默认值
 特殊字符：
     &nbsp表示一个空格，
     &lt小于号
@@ -70,4 +67,83 @@ body标签：用于存放所有html标签
                     <li><li>
                     <li><li>
                 </ol>
-            
+        自定义列表：格式
+            <dl>
+                <dt>主要</dt>
+                <dd>解释说明</dd>
+                <dd>解释说明</dd>
+            </dl>
+            输出格式：
+                主要
+                    解释说明
+                    解释说明
+表格：主要用来处理显示数据，而非布局。
+    <table width="" height="">
+        <tr>
+           <td>单元格内容</td> 
+           ...
+        </tr>
+        ...
+    </table>
+    标签：
+    <table></table>:表格标签
+    <tr></tr>:单元格标签（行）tr换成th会加粗文字并自动居中文字。
+    <td></td>:单元格标签（列）
+    表格属性：border设置表格边框
+             cellspacing设置单元格和边框的距离
+             cellpadding设置单元格内容和边框的距离
+             align="center/right/left"设置表格居中
+    表格结构
+        可以使用thead和tbody设置表格结构
+    可以在网页页面单击右键用检查查看网页元素。
+表格标题：
+    <caption>我是表格标题</caption>
+合并单元格：
+    跨行合并：rowspan="从上往下合并个数"写于单元格属性里即可。
+    跨行合并：colspan=“从左往右合并个数”        
+表单标签：
+    收集用户信息，与用户交互。分为三部分。
+    表单域
+    提示文本
+    表单控件
+        inphut标签（单）
+            <input type=""/>
+            tyep为input的属性.
+            共有text单行文本输入
+                password密码输入框
+                radio单选按钮
+                checkbox复选框
+                button普选按钮:<input type="button" value="按钮">
+                submit提交按钮:<input type="submit">其value默认为提交
+                reset重置按钮:重置表单。
+                image图像形式提交按钮：<input type="image" src="  .jpg">
+                file文件域:文件按钮，用于上传文件。
+            name属性：由用户自定义，使用name可以将多个控件划为一组。
+            value属性：由用户自定义input控件中的默认文本值
+            size属性：正整数，input控件的显示宽度
+            checked定义选择空间中的默认选择项
+            maxlength控件允许输入的最多字符数
+        label标签：用于绑定一个表单元素，当点击label标签时，被绑定的表单元素会获得输入焦点。
+            用法一：<label>  输入账号：<input type="text"> </label>
+            用法二：<label fot="two">  输入账号： <input type="text">  <input type="text" id=“two"></label>
+        textarea控件文本域（双标签）：
+            输入大量信息clos row可以分别控制每行能输入的个数，显示的行数。
+        selcet控件：
+            双标签，用于生成下拉菜单，例如
+                <select>
+                    <option selected="selected"> 此项默认选中 </option>
+                    <option>上海</option>
+                    ...
+                </select>
+        表单域：
+            双标签，使用样例：
+                <form action="提交目的地” method="提交方式 name="usermessage">
+                    ...
+                </form>
+html5新增的标签
+    header双标签：定义网站主体body的头部分
+    nav双标签：定义导航栏
+    footer双标签：定义页面的底部
+    article双标签：定义文章
+    section双标签:定义区域
+    aside双标签：定义侧边  
