@@ -146,4 +146,42 @@ html5新增的标签
     footer双标签：定义页面的底部
     article双标签：定义文章
     section双标签:定义区域
-    aside双标签：定义侧边  
+    aside双标签：定义侧边
+    datalist双标签：使用如例
+     <input value="  " list=" ">
+        <datalist id=" "/>
+        <option> 选项1  </option>
+        <option> 选项2  </option>
+        ...
+        <datalist/>  
+    fieldset双标签：将表单内的相关元素分组打包
+        <fieldset>
+            <legend> 用户登录 </legend>
+            用户名：<input type="text">
+        </fieldset>
+        legend双标签：用于在方框上显示文字
+新增的html5 input属性：
+    type=""
+        email输入邮箱格式
+        tel输入手机号格式
+        url输入url网址格式
+        number输入数字格式
+        search搜索框，体现语义化
+        range自由拖动滑块
+        time小时分钟
+        data年月日
+        datatime时间
+        month月年
+        week星期年
+        placeholder占位符用于value输入时文字消失
+        autofocus自动获得输入焦点
+        multiple多文件上传
+        autocomplete提交后自动记录：需要提交，需要名字name
+        required必填项
+    多媒体标签
+                <embed src=" ">
+                <audio  autoplay="autoplay" contorls loop="-1"></audio>插入音频并播放
+                    <audio src=".mp3" controls autoplay>
+                            <source src=".ogg"/>
+                            <source src=".mp3"/>
+                    <audio/>
